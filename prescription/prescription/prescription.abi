@@ -1,0 +1,72 @@
+{
+    "____comment": "This file was generated with eosio-abigen. DO NOT EDIT ",
+    "version": "eosio::abi/1.1",
+    "types": [],
+    "structs": [
+        {
+            "name": "prescrqueue",
+            "base": "",
+            "fields": [
+                {
+                    "name": "id",
+                    "type": "uint64"
+                },
+                {
+                    "name": "prescr",
+                    "type": "string"
+                },
+                {
+                    "name": "createTime",
+                    "type": "uint64"
+                }
+            ]
+        },
+        {
+            "name": "saveprescr",
+            "base": "",
+            "fields": [
+                {
+                    "name": "id",
+                    "type": "uint64"
+                },
+                {
+                    "name": "prescr",
+                    "type": "string"
+                }
+            ]
+        },
+        {
+            "name": "useprescr",
+            "base": "",
+            "fields": [
+                {
+                    "name": "id",
+                    "type": "uint64"
+                }
+            ]
+        }
+    ],
+    "actions": [
+        {
+            "name": "saveprescr",
+            "type": "saveprescr",
+            "ricardian_contract": ""
+        },
+        {
+            "name": "useprescr",
+            "type": "useprescr",
+            "ricardian_contract": ""
+        }
+    ],
+    "tables": [
+        {
+            "name": "prescrqueues",
+            "type": "prescrqueue",
+            "index_type": "i64",
+            "key_names": [],
+            "key_types": []
+        }
+    ],
+    "ricardian_clauses": [],
+    "variants": []
+}
